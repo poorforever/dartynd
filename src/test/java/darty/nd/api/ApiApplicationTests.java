@@ -18,10 +18,10 @@ class ApiApplicationTests {
 
 	@Test
 	void application_can_start() throws Exception {
-		final var actual = mockMvc.perform(
-				MockMvcRequestBuilders.get("/actuator/health")
-						.accept(MediaType.APPLICATION_JSON)
-		).andExpect(status().isOk());
-	}
+        mockMvc.perform(
+                MockMvcRequestBuilders.get("/actuator/health")
+                        .accept(MediaType.APPLICATION_JSON)
+        ).andExpect(status().isOk());
+    }
 
 }
