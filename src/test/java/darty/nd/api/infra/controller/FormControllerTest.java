@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class FormControllerTest {
 
     @Test
-    void add() {
+    void create() {
     }
 
     @Test
